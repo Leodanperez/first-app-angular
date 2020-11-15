@@ -1,0 +1,32 @@
+<section id="services" class="dark" *ngIf="!preload">
+  <div class="inner-width">
+    <h2 class="section-title">Services</h2>
+    <div class="services">
+
+      <div class="service" *ngFor="let service of listServices">
+        <i class="icon {{service.icono}}"></i>
+        <h4>{{service.title}}</h4>
+        <p>{{service.descripcion}}</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<article class="container" *ngIf="preload">
+  <div class="background">
+    <div class="left">
+      <div class="image"></div>
+      <div class="mask thick"></div>
+    </div>
+    <div class="right">
+      <div class="bar"></div>
+      <div class="mask thick"></div>
+      <div class="bar"></div>
+      <div class="mask thin"></div>
+      <div class="bar medium"></div>
+      <div class="mask thick"></div>
+      <div class="bar small"></div>
+    </div>
+  </div>
+</article>
